@@ -9,7 +9,7 @@ onready var Explosion = load("res://Explosion/Explosion.tscn")
 onready var Sound = get_node("/root/Game/Cow")
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	position += speed
 
 	if position.y > get_viewport().size.y + 100:

@@ -5,7 +5,7 @@ var decay = 0.1
 var recharge = 0.01
 var damage = 10
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	$Line2D.points[1] = cast_to
 	if is_casting and is_colliding():
 		var c = get_collider()

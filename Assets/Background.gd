@@ -1,5 +1,5 @@
-extends VideoPlayer
+extends TextureRect
 
-func _on_Background_finished():
-	play()
+#func _on_Background_finished():
+	#play()
 
