@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+onready var HUD = get_node("/root/Game/HUD")
 export var speed = 7
 
 
@@ -22,4 +23,5 @@ func get_input():
 
 
 func _on_Damage_body_entered(body):
+	HUD.update_health(-body.damage)
 	body.die()
